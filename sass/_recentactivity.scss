@@ -1,0 +1,19 @@
+.recentactivity {
+  grid-area: recentactivity;
+  display: grid;
+  grid-gap: 1rem;
+  //   grid-template-columns: 3rem 1fr 1fr;
+
+  .members--box {
+    display: grid;
+    grid-template-columns: 5rem 1fr;
+    grid-row-gap: 1rem;
+    @media only screen and (min-width: $bp-large) {
+      font-size: 14px;
+    }
+  }
+}
+.members--text {
+  display: grid;
+  grid-column: 1fr;
+}

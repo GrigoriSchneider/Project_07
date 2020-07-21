@@ -1,0 +1,65 @@
+.messageuser {
+  grid-area: messageuser;
+  display: grid;
+  //   grid-template-columns: 40rem;
+  grid-template-rows: 3.5rem 1fr;
+  margin-bottom: 3rem;
+
+  @media (min-width: $bp-medium) {
+    grid-template-rows: 5rem 1fr;
+  }
+
+  form {
+    display: grid;
+    grid-gap: 1rem;
+    margin-left: 1rem;
+
+    @media (min-width: $bp-medium) {
+      grid-template-rows: 1fr 3.5fr 4rem;
+    }
+
+    input,
+    textarea {
+      font-family: inherit;
+
+      font-size: 16px;
+
+      color: #dbdbdb;
+
+      border: solid 2px #dbdbdb;
+
+      border-radius: 10px;
+    }
+  }
+}
+.button-primary {
+  font-family: inherit;
+
+  font-size: 18px;
+
+  background-color: $color-secondary;
+  color: $color-primary;
+
+  border: solid 1px $color-secondary;
+
+  border-radius: 10px;
+  // padding: 0.5rem 3rem;
+}
+.button-secondary {
+  font-family: inherit;
+
+  font-size: 18px;
+
+  background-color: $color-grey-light-1;
+  color: $color-primary;
+
+  border: solid 1px $color-grey-light-1;
+
+  border-radius: 10px;
+  padding: 0.5rem 3rem;
+}
+.message--alert {
+  font-size: 20px;
+  width: 0px;
+  transition: width 0.3s ease;
+}

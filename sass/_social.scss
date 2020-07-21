@@ -1,0 +1,70 @@
+.social {
+  &stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1rem;
+    // justify-items: center;
+    @media only screen and (min-width: $bp-large) {
+      grid-column-gap: 6rem;
+    }
+  }
+
+  &--container {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10rem;
+    border: solid 1px $color-grey-light-1;
+    border-radius: 1rem;
+
+    @media only screen and (min-width: $bp-medium) {
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: 15rem;
+      margin-top: 2.5rem;
+    }
+
+    .svg--container {
+      background-color: $color-secondary;
+      border-radius: 50%;
+      height: 9rem;
+      width: 9rem;
+      @media only screen and (min-width: $bp-medium) {
+        margin-left: 1.5rem;
+      }
+    }
+    .twitter {
+      margin-top: 1.5rem;
+      margin-left: 1rem;
+    }
+    .facebook {
+      margin-left: 0.5rem;
+      margin-top: 0.5rem;
+    }
+    .google {
+      margin-left: 0.8rem;
+      margin-top: 0.8rem;
+    }
+
+    .social--img {
+      height: 6.5rem;
+      width: 6.5rem;
+      fill: $color-primary;
+    }
+
+    .social--text {
+      @media only screen and (min-width: $bp-medium) {
+        font-size: 20px;
+      }
+      @media only screen and (min-width: $bp-large) {
+        font-size: 26px;
+      }
+
+      &__brand {
+        color: $color-secondary;
+        // font-family: sans-serif;
+        font-weight: 700;
+      }
+    }
+  }
+}

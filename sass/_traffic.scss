@@ -1,0 +1,82 @@
+.traffic {
+  margin-bottom: 3rem;
+  &--header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .traffic--nav {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+
+      &-link {
+        margin: 1rem;
+        @media (min-width: $bp-medium) {
+          font-size: 16px;
+          color: $color-grey-light-2;
+          font-weight: 700;
+          border-radius: 1rem;
+          padding: 4px 7px 0;
+        }
+      }
+    }
+
+    h3 {
+      justify-self: center;
+    }
+  }
+  // Active Class Button
+  .active {
+    background-color: $color-green;
+    color: $color-primary;
+    border-radius: 1rem;
+  }
+}
+.traffic-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+
+  li {
+    margin-left: 0.5em;
+    min-width: 4em;
+    text-align: center;
+    border-radius: 8px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-image: initial;
+  }
+}
+
+/* ============================================= */
+/*              Chart Canvas Settings            */
+/* ============================================= */
+.widget-container-half {
+  width: 90vw;
+  height: 20vh;
+  margin: auto;
+  position: relative;
+}
+@media (min-width: $bp-medium) {
+  .widget-container-half {
+    width: 45vw;
+  }
+}
+
+.widget-container-full {
+  width: 100vw;
+  height: 40vh;
+  position: relative;
+  margin: auto;
+}
+@media (min-width: $bp-medium) {
+  .widget-container-full {
+    width: 90vw;
+  }
+}
+@media (min-width: $bp-large) {
+  .widget-container-full {
+    height: 35vh;
+  }
+}

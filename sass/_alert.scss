@@ -1,0 +1,33 @@
+.alert {
+  font-size: 12px;
+  display: grid;
+  grid-template-columns: 1fr;
+  @media only screen and (min-width: $bp-medium) {
+    font-size: 16px;
+    grid-template-columns: 1fr;
+  }
+
+  &-banner {
+    display: grid;
+    grid-template-columns: 1fr 2rem;
+    padding: 0.5rem;
+
+    @media only screen and (min-width: $bp-medium) {
+      grid-template-columns: max-content 2rem;
+      align-items: center;
+
+      justify-content: space-between;
+      font-size: 16px;
+      padding-left: 2rem;
+      margin-right: 3rem;
+    }
+    font-family: inherit;
+    color: $color-primary;
+    border-radius: 1rem;
+    background-color: $color-secondary;
+
+    &-close:hover {
+      color: red;
+    }
+  }
+}

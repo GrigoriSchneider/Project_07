@@ -1,0 +1,8 @@
+.mobileuser {
+  grid-area: mobile;
+}
+.half-size-charts {
+  display: grid;
+  grid-gap: 2px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}

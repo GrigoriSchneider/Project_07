@@ -1,0 +1,24 @@
+.newmembers {
+  grid-area: newmembers;
+
+  display: grid;
+  grid-gap: 1rem;
+
+  &--box {
+    color: $color-grey-dark-1;
+    display: grid;
+    grid-template-columns: 7rem 15rem min-content;
+    font-size: 12px;
+    @media (min-width: $bp-medium) {
+      grid-template-columns: 7rem 1fr 10rem;
+    }
+    @media only screen and (min-width: $bp-large) {
+      font-size: 14px;
+    }
+  }
+}
+.member--img {
+  height: 4rem;
+  border-radius: 50%;
+  place-self: center;
+}

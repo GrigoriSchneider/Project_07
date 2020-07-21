@@ -1,0 +1,170 @@
+// COLOR VARIABLES
+$color-primary: #fff;
+$color-primary-dark: #b28451;
+
+$color-secondary: #7377bf;
+
+$color-grey-light-1: #d1d1d1; //border
+$color-grey-light-2: #9f9f9f; //traffic
+$color-green: #81c98f;
+
+$color-grey-dark-1: #666666; // h3
+
+// FONT VARIABLES
+$font-primary: 'Nunito', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
+
+// RESPONSIVE BREAKPOINTS
+$bp-large: 64em; // 1024px
+$bp-medium: 48em; // 768px
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font-primary;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+.mt-2 {
+  margin-top: 2rem;
+}
+.mt-3 {
+  margin-top: 3rem;
+}
+.ml-1 {
+  margin-left: 1rem;
+}
+.ml-2 {
+  margin-left: 2rem;
+}
+.ml-3 {
+  margin-left: 3rem;
+}
+.pl-1 {
+  padding-left: 1rem;
+}
+.pl-2 {
+  padding-left: 2rem;
+}
+.pl-3 {
+  padding-left: 3rem;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+.m-2 {
+  margin: 2rem;
+}
+.m-3 {
+  margin: 4rem;
+}
+
+h2 {
+  font-size: 16px;
+  color: $color-grey-dark-1;
+  @media (min-width: $bp-medium) {
+    font-size: 20px;
+  }
+}
+
+h3 {
+  font-size: 16px;
+  color: $color-grey-dark-1;
+  text-transform: uppercase;
+  @media (min-width: $bp-medium) {
+    font-size: 18px;
+  }
+}
+
+.container {
+  @media only screen and (min-width: $bp-medium) {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 6rem 1fr 1fr;
+    grid-template-rows: 5rem 7rem 5rem 10rem 35rem 22rem 25rem 27rem;
+
+    .header {
+      grid-column: 1/-1;
+      grid-row: 1/2;
+    }
+
+    .sidebar {
+      grid-row: 2/10;
+      grid-column: 1/2;
+    }
+    .search {
+      grid-row: 2/3;
+      grid-column: 2/-1;
+    }
+    .alert {
+      grid-row: 3/4;
+      grid-column: 2/-1;
+    }
+    .traffic {
+      grid-row: 4/5;
+      grid-column: 2/-1;
+    }
+    .dailytraffic {
+      grid-row: 6/7;
+      grid-column: 2/3;
+    }
+    .mobileuser {
+      grid-row: 6/7;
+      grid-column: 3/4;
+    }
+    .social {
+      grid-row: 7/8;
+      grid-column: 2/-1;
+    }
+    .newmembers {
+      grid-row: 8/9;
+      grid-column: 2/3;
+    }
+    .recentactivity {
+      grid-row: 8/9;
+      grid-column: 3/4;
+    }
+    .messageuser {
+      grid-row: 9/10;
+      grid-column: 2/3;
+    }
+    .settings {
+      grid-row: 9/10;
+      grid-column: 3/4;
+    }
+  }
+
+  @media only screen and (min-width: $bp-large) {
+    grid-template-rows: 5rem 7rem 5rem 10rem 47rem 28rem 25rem 35rem;
+  }
+}
+.selected {
+  background-color: #78cf82;
+}
